@@ -1,0 +1,12 @@
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <theme href="theme.html" />
+
+    <drop css:content="#indices-and-tables" />
+    <before css:theme-children="#content">HTTP status code: <xsl:value-of select="$httpcode" /></before>
+    <replace css:theme-children="#content" css:content-children=".content" />
+
+</rules>
